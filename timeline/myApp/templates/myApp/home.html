@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="signupFrm">
+        <div class="wrapper">
+        <form action="." class="form" method="post">
+          {% csrf_token %}
+          <h1 class="title">Sign up</h1>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" name="to-be" id="to-be" value="{{ val }}" >
+            <label for="email" class="label">Enter a word</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" name="to" id="to" value={{ keys }} >
+            <label for="username" class="label">Hindi Form</label>
+          </div>
+          <input type="submit" class="submitBtn" value="Sign up">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
